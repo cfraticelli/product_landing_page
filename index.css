@@ -3,5 +3,27 @@
     margin: 0;
 }
 header {
+    display: flex;
+    justify-content: space-between;
     background-color: black;
+    padding: 5px;
+
+}
+#nav-bar{
+    text-decoration: none;
+    letter-spacing: 2px;
+    width: 50%;
+    align-self: center;
+} 
+#nav-bar a {
+    text-decoration: none;
+    color: white;
+    margin-left: 90px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+#header-img{
+    justify-content: flex-start;
+    width: 12%;
+    
 }
