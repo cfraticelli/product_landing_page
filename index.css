@@ -104,14 +104,12 @@ input[type=submit]:hover {
 .info {
     display: flex; 
     background-color: #F9E8A0;
-    /* background-image: linear-gradient(white, #F9E8A0, white); */
-    height: 500px; 
 }
 .info div {
     justify-content: center;
     align-self: center;
     /* background-color: green; */
-    padding: 6% 2% 6% 2%;
+    padding: 7% 2% 7% 2%;
 }
 .info div:nth-child(1) {
     color: black;
