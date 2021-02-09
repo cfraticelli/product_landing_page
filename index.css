@@ -16,16 +16,25 @@ header {
 }
 #nav-bar{
     text-decoration: none;
-    letter-spacing: 2px;
     width: 50%;
     align-self: center;
 } 
 #nav-bar a {
     text-decoration: none;
     color: white;
-    margin-left: 90px;
     text-transform: uppercase;
     font-weight: 900;
+    letter-spacing: 6px;
+    font-size: 1.1em;
+    padding-left: 50px;
+}
+#nav-bar a:hover {
+    background-color: burlywood;
+    padding: 11px 20px;
+    margin: 8px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    color: black;
 }
 #header-img{
     justify-content: flex-start;
