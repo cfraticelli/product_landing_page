@@ -216,3 +216,28 @@ footer {
 .main-footer a:visited {
     color: black;
 }
+@media (min-width: 768px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .product-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        max-width: 50%;
+    }
+}
