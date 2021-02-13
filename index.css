@@ -18,6 +18,10 @@ header {
     /* position: fixed; */
 
 }
+
+#resp-navbar {
+    display: none;
+}
 #nav-bar{
     text-decoration: none;
     width: 50%;
@@ -29,16 +33,16 @@ header {
     text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: 6px;
-    font-size: 1.1em;
+    font-size: 100%;
     padding-left: 50px;
 }
 #nav-bar a:hover {
-    background-color: #F9E8A0;
+    /* background-color: #F9E8A0;
     padding: 11px 20px;
     margin: 8px;
     border: 1px solid grey;
-    border-radius: 4px;
-    color: black;
+    border-radius: 4px; */
+    color: #00C1A2;
 }
 #header-img{
     justify-content: flex-start;
@@ -216,28 +220,6 @@ footer {
 .main-footer a:visited {
     color: black;
 }
-@media (min-width: 768px) {
-    .main-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    }
-    .info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .product-cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .card {
-        max-width: 50%;
-    }
+@media screen and (max-width: 1756px){
+    
 }
