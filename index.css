@@ -1,6 +1,7 @@
 * {
     font-family: 'Inter', sans-serif;
     margin: 0;
+    text-decoration: none;
 }
 .wrapper {
     display: flex;
@@ -14,45 +15,39 @@ header {
     padding: 5px;
     width: 100%;
     position: fixed
-   
-    /* position: fixed; */
-
 }
-
-#resp-navbar {
+#header-img{
+    justify-content: flex-start;
+    width: 12%;
+}
+#nav-bar-resp {
     display: none;
-}
-#nav-bar{
-    text-decoration: none;
-    width: 50%;
-    align-self: center;
 } 
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4% 0 4%;
+}
+nav#nav-bar {
+   width: 50%;
+   align-self: center;
+}
 #nav-bar a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
     font-weight: bolder;
-    letter-spacing: 6px;
-    font-size: 100%;
-    padding-left: 50px;
+    letter-spacing: 3px; */
 }
 #nav-bar a:hover {
-    /* background-color: #F9E8A0;
-    padding: 11px 20px;
-    margin: 8px;
-    border: 1px solid grey;
-    border-radius: 4px; */
     color: #00C1A2;
-}
-#header-img{
-    justify-content: flex-start;
-    width: 12%;
 }
 .main-content {
     display: flex;
     /* background-color: green; */
     padding: 2%;
     height: 85vh;
+    margin-top: 2%;
 }
 .content {
     justify-content: center;
@@ -220,6 +215,13 @@ footer {
 .main-footer a:visited {
     color: black;
 }
-@media screen and (max-width: 1756px){
-    
+@media screen and (max-width: 1584px) {
+    #nav-bar a{
+        
+    }
+}
+@media screen and (max-width: 768px){
+    #nav-bar {
+        /* display: none; */
+    }
 }
