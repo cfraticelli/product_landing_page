@@ -101,6 +101,9 @@ input[type=submit]:hover {
     transition: 0.3s;
     background-color: #00dbb7;
 }
+
+
+/* Three icons against yellow background */
 .info {
     display: flex; 
     background-color: #F9E8A0;
@@ -112,11 +115,9 @@ input[type=submit]:hover {
     padding: 7% 2% 7% 2%;
 }
 .info div:nth-child(1) {
-    color: black;
     padding-left: 15%;
 }
 .info div:last-of-type{
-    color: black;
     padding-right: 15%;
 }
 .info div p {
@@ -124,16 +125,21 @@ input[type=submit]:hover {
     line-height: 2em;
 }
 .info div h4 {
-    font-size: 1.7rem;
+    font-size: 1.5em;
+    font-weight: bolder;
     text-align: center;
-    padding-bottom: 5%
+    padding-bottom: 5%;
 }
 .info div i {
     border-radius: 50%;
     text-align: center;
     width: 100%;
     padding-bottom: 10%;
+    font-size: 4vw;
 }
+
+
+/* Video section */
 .video {
     display: flex;
     flex-direction: column;
@@ -141,8 +147,11 @@ input[type=submit]:hover {
     align-items: center;
     padding: 2% 5%;
 }
+video {
+    width: 60%;
+}
 .video h1 {
-    font-size: 3.5em;
+    font-size: 3vw;
     padding-bottom: 2%;
 }
 .product-cards {
@@ -152,7 +161,7 @@ input[type=submit]:hover {
 #product-title{
     text-align: center;
     padding: 1%;
-    font-size: 2em;
+    font-size: 1.5vw;
 }
 .card {
     box-shadow: 2px 4px 25px rgba(0,0,0,0.15);
@@ -160,12 +169,13 @@ input[type=submit]:hover {
     padding: 2%;
     margin: 2%;
     text-align: center;
-    font-family: arial;
     border-radius: 5px;
+    padding: 2%;
 }
 .card p {
     text-align: justify;
     padding: 2%;
+    font-size: 1em;
 }
 .card .price {
     text-align: center;
@@ -173,21 +183,20 @@ input[type=submit]:hover {
 } 
 .price {
     color: grey;
-    font-size: 22px;
+    font-size: 1.5em;
 }
   
 .card button {
     border: none;
     outline: 0;
-    padding: 12px;
+    padding: .5em;
     color: white;
     background-color: #000;
     text-align: center;
     cursor: pointer;
     width: 100%;
-    font-size: 18px;
+    font-size: 1.2em;
     border-radius: 4px;
-    padding-bottom: 8%;
 }
   
 .card button:hover {
@@ -224,7 +233,22 @@ footer {
         font-size: 85%;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1020px) {
+    /* Main content paragraph */
+    .info div p {
+          line-height: 2em;
+          font-size: .9em;
+          text-align: justify
+      }
+    .info div:nth-child(1) {
+        padding-left: 10%;
+    }
+    .info div:last-of-type{
+        padding-right: 10%;
+    }
+  }
+@media screen and (max-width: 788px){
+    /* Responsive nav bar dropdown */
     #nav-bar {
         display: none;
     }
@@ -273,4 +297,77 @@ footer {
         color: #00C1A2;
         border-radius: 4px
     }
+    /* Main content paragraph */
+    .content p {
+        line-height: 1.5em;
+        font-size: .8em;
+        text-align: justify
+    }
+    /* Info section */
+    .info {
+        justify-content: column;
+        align-items: center;
+    }
+    .info i {
+        font-size: 8vw;
+    }
+    .info div p {
+        line-height: 1.5em;
+        font-size: .8em;
+    }
+    .info div h4 {
+        font-size: 1em;
+    }
+        
+}
+@media screen and (max-width: 554px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+    }
+    #main-img {
+        display: none;
+    }
+    .info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+    }
+    .info div {
+        margin: 0;
+        padding: 2%;
+        width: 80%;
+    }
+    .info div:nth-child(1) {
+        padding-left: 0;
+    }
+    .info div:last-of-type{
+        padding-right: 0;
+    }
+    .info div i {
+        font-size: 8vw;
+    }
+    .video h1 {
+        font-size: 1.5em;
+    }
+    video {
+        width: 90%;
+    }
+    #product-title {
+        font-size: 1em;
+        padding: 5%;
+    }
+    .product-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card p {
+        font-size: .8em;
+    }
+    .card h1 {
+        font-size: 1.3em;
+    }
+    
 }
